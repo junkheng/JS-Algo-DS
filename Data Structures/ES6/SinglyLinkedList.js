@@ -131,10 +131,15 @@ class SinglyLinkedList {
     var next;
     var prev = null;
     for (var i = 0; i < this.length; i++) { // sort of like 3 steps forward and 2 steps backward
+      console.log(node);
       next = node.next;
-      node.next = prev;
+      console.log(next);
+      node.next = prev; // connecting in the new list
+      console.log(node.next);
       prev = node;
+      console.log(prev);
       node = next;
+      console.log(node);
     }
     return this;
   }
