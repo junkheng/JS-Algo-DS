@@ -1,3 +1,4 @@
+// average case - constant time complexity
 class HashTable {
   constructor(size = 4) {
     this.keyMap = new Array(size);
